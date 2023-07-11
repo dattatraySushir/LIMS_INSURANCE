@@ -23,6 +23,7 @@ import com.lims.objectRepository.HomePage;
 public class CreateClientAndLoginWithClientTest extends Baseclass {
 	@Test(groups = {"Smoke"})
 	public void createclient() throws Throwable {
+		//welcome to changes
 		HomePage hp = new HomePage(driver);
 		hp.clickOnClient();
 		CreateClientAndLoginClientPage cl = new CreateClientAndLoginClientPage(driver);
