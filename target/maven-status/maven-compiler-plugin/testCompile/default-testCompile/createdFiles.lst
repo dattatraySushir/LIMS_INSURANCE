@@ -1,0 +1,17 @@
+practicePrograms\nominee\FetchTheDataFromDB.class
+practicePrograms\nominee\PaymentsScenarioPractice.class
+com\lifeInsuranceManageentSystem\SystemScenarioNomineeTest.class
+practicePrograms\nominee\LoginDataProvider.class
+com\lifeInsuranceManageentSystem\CreateClientAndLoginWithClientTest.class
+practicePrograms\nominee\SystemScenarioNomineePractice.class
+practicePrograms\nominee\ExceldataPrint.class
+practicePrograms\nominee\IntegrationLimsPractice.class
+practicePrograms\nominee\InserDataIntoDB.class
+practicePrograms\nominee\CreateClientAndLoginWithClientPractice.class
+practicePrograms\nominee\ExcelDataFill.class
+practicePrograms\nominee\SampleBaseclass.class
+practicePrograms\nominee\JsonObjectReader.class
+practicePrograms\nominee\VerifyAndCheckData.class
+com\lifeInsuranceManageentSystem\PaymentsScenarioTest.class
+practicePrograms\nominee\ExcelFetching.class
+practicePrograms\nominee\LoginWithDataProvider.class
