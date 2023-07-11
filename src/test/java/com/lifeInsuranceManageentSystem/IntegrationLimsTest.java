@@ -1,5 +1,6 @@
 package com.lifeInsuranceManageentSystem;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.genericLibraries.lims.Baseclass;
@@ -8,7 +9,7 @@ import com.genericLibraries.lims.JavaUtility;
 import com.lims.objectRepository.CreateClientAndLoginClientPage;
 import com.lims.objectRepository.HomePage;
 import com.lims.objectRepository.PaymentsPage;
-
+@Listeners(com.genericLibraries.lims.Listners.class)
 public class IntegrationLimsTest extends Baseclass {
 	@Test(groups ={"Smoke","Regression"})
 	public void limsIntegration() throws Throwable {
