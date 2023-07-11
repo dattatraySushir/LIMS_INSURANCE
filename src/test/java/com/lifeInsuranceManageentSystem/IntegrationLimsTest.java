@@ -10,7 +10,7 @@ import com.lims.objectRepository.HomePage;
 import com.lims.objectRepository.PaymentsPage;
 
 public class IntegrationLimsTest extends Baseclass {
-	@Test
+	@Test(groups ="")
 	public void limsIntegration() throws Throwable {
 		HomePage hp = new HomePage(driver);
 		hp.clickOnClient();
