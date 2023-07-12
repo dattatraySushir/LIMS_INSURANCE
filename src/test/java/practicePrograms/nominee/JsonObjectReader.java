@@ -19,7 +19,7 @@ public class JsonObjectReader {
 		JSONObject map= (JSONObject)obj;
 		String data=(String)map.get("key");
 		return data;
-		
+		//json data send
 	}
 
 }

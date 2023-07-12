@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Surefire test Test Suite execution Started ]]>
+      <![CDATA[Command line test Test Suite execution Started ]]>
+    </line>
+    <line>
+      <![CDATA[null Test execution Started ]]>
+    </line>
+    <line>
+      <![CDATA[null Test succefully executed ]]>
     </line>
     <line>
       <![CDATA[null Test execution Started ]]>
@@ -23,28 +29,30 @@
       <![CDATA[null Test succefully executed ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-11T10:36:22 IST" name="Surefire suite" finished-at="2023-07-11T10:36:59 IST" duration-ms="37411">
+  <suite started-at="2023-07-12T13:20:57 IST" name="Command line suite" finished-at="2023-07-12T13:22:33 IST" duration-ms="96270">
     <groups>
       <group name="Regression">
-        <method signature="PaymentsScenarioTest.payments()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@9353778]" name="payments" class="com.lifeInsuranceManageentSystem.PaymentsScenarioTest"/>
-        <method signature="SystemScenarioNomineeTest.nomineeScenario()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@6a28ffa4]" name="nomineeScenario" class="com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest"/>
+        <method signature="IntegrationLimsTest.limsIntegration()[pri:0, instance:com.lifeInsuranceManageentSystem.IntegrationLimsTest@69e1dd28]" name="limsIntegration" class="com.lifeInsuranceManageentSystem.IntegrationLimsTest"/>
+        <method signature="PaymentsScenarioTest.payments()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@11bd0f3b]" name="payments" class="com.lifeInsuranceManageentSystem.PaymentsScenarioTest"/>
+        <method signature="SystemScenarioNomineeTest.nomineeScenario()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@c333c60]" name="nomineeScenario" class="com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="CreateClientAndLoginWithClientTest.createclient()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" name="createclient" class="com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest"/>
-        <method signature="PaymentsScenarioTest.payments()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@9353778]" name="payments" class="com.lifeInsuranceManageentSystem.PaymentsScenarioTest"/>
+        <method signature="CreateClientAndLoginWithClientTest.createclient()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" name="createclient" class="com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest"/>
+        <method signature="IntegrationLimsTest.limsIntegration()[pri:0, instance:com.lifeInsuranceManageentSystem.IntegrationLimsTest@69e1dd28]" name="limsIntegration" class="com.lifeInsuranceManageentSystem.IntegrationLimsTest"/>
+        <method signature="PaymentsScenarioTest.payments()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@11bd0f3b]" name="payments" class="com.lifeInsuranceManageentSystem.PaymentsScenarioTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-07-11T10:36:22 IST" name="Surefire test" finished-at="2023-07-11T10:36:59 IST" duration-ms="37411">
+    <test started-at="2023-07-12T13:20:57 IST" name="Command line test" finished-at="2023-07-12T13:22:33 IST" duration-ms="96270">
       <class name="com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@6a28ffa4]" started-at="2023-07-11T10:36:42 IST" name="openBrowser" finished-at="2023-07-11T10:36:44 IST" duration-ms="1203" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@c333c60]" started-at="2023-07-12T13:22:03 IST" name="openBrowser" finished-at="2023-07-12T13:22:05 IST" duration-ms="2278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@6a28ffa4]" started-at="2023-07-11T10:36:44 IST" name="loginToApp" finished-at="2023-07-11T10:36:44 IST" duration-ms="377" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@c333c60]" started-at="2023-07-12T13:22:05 IST" name="loginToApp" finished-at="2023-07-12T13:22:06 IST" duration-ms="760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="nomineeScenario()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@6a28ffa4]" started-at="2023-07-11T10:36:44 IST" name="nomineeScenario" finished-at="2023-07-11T10:36:59 IST" duration-ms="14813" status="PASS">
+        <test-method signature="nomineeScenario()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@c333c60]" started-at="2023-07-12T13:22:06 IST" name="nomineeScenario" finished-at="2023-07-12T13:22:33 IST" duration-ms="26649" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[null Test execution Started ]]>
@@ -54,25 +62,25 @@
             </line>
           </reporter-output>
         </test-method> <!-- nomineeScenario -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@6a28ffa4]" started-at="2023-07-11T10:36:59 IST" name="logoutFromApp" finished-at="2023-07-11T10:36:59 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@c333c60]" started-at="2023-07-12T13:22:33 IST" name="logoutFromApp" finished-at="2023-07-12T13:22:33 IST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@6a28ffa4]" started-at="2023-07-11T10:36:59 IST" name="closeBrowser" finished-at="2023-07-11T10:36:59 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest@c333c60]" started-at="2023-07-12T13:22:33 IST" name="closeBrowser" finished-at="2023-07-12T13:22:33 IST" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.lifeInsuranceManageentSystem.SystemScenarioNomineeTest -->
       <class name="com.lifeInsuranceManageentSystem.PaymentsScenarioTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@9353778]" started-at="2023-07-11T10:36:35 IST" name="openBrowser" finished-at="2023-07-11T10:36:37 IST" duration-ms="1262" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@11bd0f3b]" started-at="2023-07-12T13:21:55 IST" name="openBrowser" finished-at="2023-07-12T13:21:57 IST" duration-ms="2252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@9353778]" started-at="2023-07-11T10:36:37 IST" name="loginToApp" finished-at="2023-07-11T10:36:37 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@11bd0f3b]" started-at="2023-07-12T13:21:57 IST" name="loginToApp" finished-at="2023-07-12T13:21:58 IST" duration-ms="639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="payments()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@9353778]" started-at="2023-07-11T10:36:37 IST" name="payments" finished-at="2023-07-11T10:36:42 IST" duration-ms="4942" status="PASS">
+        <test-method signature="payments()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@11bd0f3b]" started-at="2023-07-12T13:21:58 IST" name="payments" finished-at="2023-07-12T13:22:03 IST" duration-ms="5114" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[null Test execution Started ]]>
@@ -82,29 +90,57 @@
             </line>
           </reporter-output>
         </test-method> <!-- payments -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@9353778]" started-at="2023-07-11T10:36:42 IST" name="logoutFromApp" finished-at="2023-07-11T10:36:42 IST" duration-ms="127" status="PASS">
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@11bd0f3b]" started-at="2023-07-12T13:22:03 IST" name="logoutFromApp" finished-at="2023-07-12T13:22:03 IST" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@9353778]" started-at="2023-07-11T10:36:42 IST" name="closeBrowser" finished-at="2023-07-11T10:36:42 IST" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.PaymentsScenarioTest@11bd0f3b]" started-at="2023-07-12T13:22:03 IST" name="closeBrowser" finished-at="2023-07-12T13:22:03 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.lifeInsuranceManageentSystem.PaymentsScenarioTest -->
-      <class name="com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest">
-        <test-method is-config="true" signature="dbConnectionEastablish()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" started-at="2023-07-11T10:36:21 IST" name="dbConnectionEastablish" finished-at="2023-07-11T10:36:22 IST" duration-ms="298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dbConnectionEastablish -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" started-at="2023-07-11T10:36:22 IST" name="openBrowser" finished-at="2023-07-11T10:36:24 IST" duration-ms="2115" status="PASS">
+      <class name="com.lifeInsuranceManageentSystem.IntegrationLimsTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.IntegrationLimsTest@69e1dd28]" started-at="2023-07-12T13:21:25 IST" name="openBrowser" finished-at="2023-07-12T13:21:28 IST" duration-ms="2672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" started-at="2023-07-11T10:36:24 IST" name="loginToApp" finished-at="2023-07-11T10:36:24 IST" duration-ms="428" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.lifeInsuranceManageentSystem.IntegrationLimsTest@69e1dd28]" started-at="2023-07-12T13:21:28 IST" name="loginToApp" finished-at="2023-07-12T13:21:29 IST" duration-ms="561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="createclient()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" started-at="2023-07-11T10:36:24 IST" name="createclient" finished-at="2023-07-11T10:36:35 IST" duration-ms="11082" status="PASS">
+        <test-method signature="limsIntegration()[pri:0, instance:com.lifeInsuranceManageentSystem.IntegrationLimsTest@69e1dd28]" started-at="2023-07-12T13:21:29 IST" name="limsIntegration" finished-at="2023-07-12T13:21:55 IST" duration-ms="26058" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[null Test execution Started ]]>
+            </line>
+            <line>
+              <![CDATA[null Test succefully executed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- limsIntegration -->
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.lifeInsuranceManageentSystem.IntegrationLimsTest@69e1dd28]" started-at="2023-07-12T13:21:55 IST" name="logoutFromApp" finished-at="2023-07-12T13:21:55 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApp -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.IntegrationLimsTest@69e1dd28]" started-at="2023-07-12T13:21:55 IST" name="closeBrowser" finished-at="2023-07-12T13:21:55 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.lifeInsuranceManageentSystem.IntegrationLimsTest -->
+      <class name="com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest">
+        <test-method is-config="true" signature="dbConnectionEastablish()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" started-at="2023-07-12T13:20:56 IST" name="dbConnectionEastablish" finished-at="2023-07-12T13:20:57 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbConnectionEastablish -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" started-at="2023-07-12T13:20:57 IST" name="openBrowser" finished-at="2023-07-12T13:21:02 IST" duration-ms="4617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" started-at="2023-07-12T13:21:02 IST" name="loginToApp" finished-at="2023-07-12T13:21:03 IST" duration-ms="1007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="createclient()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" started-at="2023-07-12T13:21:03 IST" name="createclient" finished-at="2023-07-12T13:21:25 IST" duration-ms="22379" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[null Test execution Started ]]>
@@ -114,19 +150,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- createclient -->
-        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" started-at="2023-07-11T10:36:35 IST" name="logoutFromApp" finished-at="2023-07-11T10:36:35 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="logoutFromApp()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" started-at="2023-07-12T13:21:25 IST" name="logoutFromApp" finished-at="2023-07-12T13:21:25 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" started-at="2023-07-11T10:36:35 IST" name="closeBrowser" finished-at="2023-07-11T10:36:35 IST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" started-at="2023-07-12T13:21:25 IST" name="closeBrowser" finished-at="2023-07-12T13:21:25 IST" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="dbConnectionClose()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@a9cd3b1]" started-at="2023-07-11T10:36:59 IST" name="dbConnectionClose" finished-at="2023-07-11T10:36:59 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="dbConnectionClose()[pri:0, instance:com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest@747edf66]" started-at="2023-07-12T13:22:33 IST" name="dbConnectionClose" finished-at="2023-07-12T13:22:33 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dbConnectionClose -->
       </class> <!-- com.lifeInsuranceManageentSystem.CreateClientAndLoginWithClientTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
 </testng-results>
