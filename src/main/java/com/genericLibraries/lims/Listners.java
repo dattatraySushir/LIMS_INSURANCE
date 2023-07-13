@@ -10,58 +10,67 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.google.common.io.Files;
 
 public class Listners implements ITestListener {
 
+	ExtentReports report;
+	ExtentTest test;
+
 	@Override
 	public void onTestStart(ITestResult result) {
-		String name=result.getTestName();
-		Reporter.log(name+" Test execution Started ");
-		
+		test = report.createTest(result.getName());
+
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		String name=result.getTestName();
-		Reporter.log(name+" Test succefully executed ");
-			
+		test.log(Status.PASS, result.getMethod().getMethodName());
+		test.log(Status.PASS, result.getThrowable());
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		String name=result.getTestName();
-		TakesScreenshot sh=(TakesScreenshot)Baseclass.driver;
-		File source = sh.getScreenshotAs(OutputType.FILE);
-		File destination= new File(".//Screenshot\\"+name+".png");
-		try {
-			Files.copy(source, destination);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
+
+		test.log(Status.FAIL, result.getMethod().getMethodName());
+		test.log(Status.FAIL, result.getThrowable());
+		String Mname = result.getTestName();
+		String screenshot = WebDriverUtility.takescreenshot(Baseclass.driver, Mname);
+		test.addScreenCaptureFromPath(screenshot);
+
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		String name=result.getTestName();
-		Reporter.log(name+" Test Skipped");
-		
+		test.log(Status.SKIP, result.getMethod().getMethodName());
+		test.log(Status.SKIP, result.getThrowable());
+
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-		String name=context.getName();
-		Reporter.log(name+" Test Suite execution Started ");
-		
+		ExtentSparkReporter spark = new ExtentSparkReporter(
+				"ExtentReports/Report" + new JavaUtility().getDate() + ".html");
+		spark.config().setTheme(Theme.DARK);
+		spark.config().setDocumentTitle("ExtentReport");
+		spark.config().setReportName("Dattatray");
+		report = new ExtentReports();
+		report.attachReporter(spark);
+		report.setSystemInfo("platform", "windows");
+		report.setSystemInfo("Executed by ", "Dattatray");
+		report.setSystemInfo("Reviewed by", "Myself");
+
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		String name=context.getName();
-		Reporter.log(name+" Suite finished");
-		
+		report.flush();
+
 	}
 
-	
 }
