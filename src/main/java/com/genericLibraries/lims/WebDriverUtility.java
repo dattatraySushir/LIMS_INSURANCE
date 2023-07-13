@@ -3,19 +3,25 @@ package com.genericLibraries.lims;
 
 	
 
-	import java.time.Duration;
+	import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
 	import java.util.Iterator;
 	import java.util.Set;
 
 	import org.openqa.selenium.Alert;
 	import org.openqa.selenium.JavascriptExecutor;
 	import org.openqa.selenium.Keys;
-	import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.interactions.Actions;
 	import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.Select;
 	import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.io.Files;
 
 	/**
 	 * contains all web browser related actions which includes mouse move , select , switchToWindow , wait etc
@@ -268,6 +274,23 @@ package com.genericLibraries.lims;
 		   }
 		   public void refresh(WebDriver driver) {
 			   driver.navigate().refresh();
+		   }
+		   /**
+		    * This is going to take a screenshot
+		    * @param driver
+		    * @param name
+		    * @return
+		    */
+		   public static String takescreenshot(WebDriver driver, String name) {
+			   TakesScreenshot sh=(TakesScreenshot)Baseclass.driver;
+				File source = sh.getScreenshotAs(OutputType.FILE);
+				File destination= new File(".//Screenshot\\"+name+".png");
+				try {
+					Files.copy(source, destination);
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+				return name;
 		   }
 		
 
