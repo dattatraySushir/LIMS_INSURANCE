@@ -47,8 +47,8 @@ public class Baseclass {
 	@BeforeClass(alwaysRun = true)
 	public void openBrowser() throws Throwable {
 		JavaUtility.print("@Beforeclass  -->Executed");
-		String BROWSER = pu.getDataFromProperties(Iconstant.propertypath, "browser");
-		//String BROWSER =System.getProperty("browser");
+		//String BROWSER = pu.getDataFromProperties(Iconstant.propertypath, "browser");
+		String BROWSER =System.getProperty("browser");
 		String URL = pu.getDataFromProperties(Iconstant.propertypath, "url");
 		switch (BROWSER) {
 		case "chrome":
