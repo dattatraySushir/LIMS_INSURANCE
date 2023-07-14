@@ -1,5 +1,8 @@
 package com.lifeInsuranceManageentSystem;
 
+import static org.junit.Assert.fail;
+
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
